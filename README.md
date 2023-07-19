@@ -1,37 +1,15 @@
 # btfhub-archive
 
-#### 介绍
-An archive providing BTF files for existing published kernels
+## 介绍
 
-#### 软件架构
-软件架构说明
+本仓库为 openEuler BTF 管理基础设施的 BTF 资源归档仓，为 openEuler 系统提供预构建的内核 BTF。详细介绍、支持系统版本等文档请参见 [`openeuler/btfhub`](https://gitee.com/openeuler/btfhub) 仓库。
 
+本仓库提供的 BTF 文件格式、目录结构与原 [BTFHub Archive](https://github.com/aquasecurity/btfhub-archive) 相同，可以混合使用。具体目录结构如下所示：
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+```
+btfhub-archive
+└── openEuler (os-release ID)
+    └── 20.03 (os-release VERSION_ID)
+        └── x86_64 (uname -m)
+            └── 4.19.90-2112.8.0.0131.oe1.x86_64.btf.tar.xz (uname -r + ".btf.tar.xz")
+```
