@@ -1,36 +1,14 @@
 # btfhub-archive
 
-#### Description
-An archive providing BTF files for existing published kernels
+#### Introduction
+This repository is a BTF resource archive for the openEuler BTF management  infrastructure and provides pre-built kernel BTF for the openEuler  system. For more information and supporting system versions, please  refer to `openeuler/btfhub` Warehouse.
 
-#### Software Architecture
-Software architecture description
+The BTF file format and directory structure provided by this repository are the same as those of the original BTFHub Archive, and can be mixed. The specific directory structure is as follows:
 
-#### Installation
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+```
+btfhub-archive
+└── openEuler (os-release ID)
+    └── 20.03 (os-release VERSION_ID)
+        └── x86_64 (uname -m)
+            └── 4.19.90-2112.8.0.0131.oe1.x86_64.btf.tar.xz (uname -r + ".btf.tar.xz")
+```
